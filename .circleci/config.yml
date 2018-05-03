@@ -33,13 +33,6 @@ workflows:
           filters:
             tags:
               only: /.*/
-      - publish_npm:
-          requires:
-            - system_tests
-            - sample_tests
-          filters:
-            tags:
-              only: '/^v[\d.]+$/'
   nightly:
     triggers:
       - schedule:
