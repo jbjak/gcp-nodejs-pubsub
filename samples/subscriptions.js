@@ -615,7 +615,7 @@ const cli = require(`yargs`)
       timeout: {
         alias: 't',
         type: 'number',
-        default: 10,
+        default: 120,
       },
     },
     opts => listenForMessages(opts.subscriptionName, opts.timeout)
@@ -627,7 +627,7 @@ const cli = require(`yargs`)
       timeout: {
         alias: 't',
         type: 'number',
-        default: 10,
+        default: 120,
       },
     },
     opts => listenForErrors(opts.subscriptionName, opts.timeout)
